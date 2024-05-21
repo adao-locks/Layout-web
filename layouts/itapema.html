@@ -23,11 +23,13 @@
 
     <section class="product">
         <div class="images">
-            <img class="selected" src="assets/img/Itapema/image2.png" alt="img1">
-            <img class="unselect" src="assets/img/Itapema/image.png" alt="img2">
+            <img id="img001" onclick="document.querySelector('#imagePrin').src = 'assets/img/Itapema/image2.png'" 
+            class="selected" src="assets/img/Itapema/image2.png" alt="img1">
+            <img id="img002" onclick="document.querySelector('#imagePrin').src = 'assets/img/Itapema/image.png'" 
+            class="unselect" src="assets/img/Itapema/image.png" alt="img2">
         </div>
         <div class="imgProd">
-            <img src="assets/img/Itapema/image2.png" alt="img1">
+            <img id="imagePrin" src="assets/img/Itapema/image2.png" alt="img1">
         </div>
         <div class="infoProd">
             <h2>Sandália de dedo Ipanema Tema Infantil</h2>
@@ -42,9 +44,12 @@
             </div>
             <p class="cor">Cor</p>
             <div class="colors">
-                <img src="assets/img/Itapema/image2.png" alt="img1">
-                <img src="assets/img/Itapema/image3.png" alt="img3">
-                <img src="assets/img/Itapema/image4.png" alt="img4">
+                <img src="assets/img/Itapema/image2.png" onclick="document.querySelector('#imagePrin').src = 'assets/img/Itapema/image2.png',
+                    document.querySelector('#img001').src = 'assets/img/Itapema/image2.png', document.querySelector('#img002').style.display = 'flex'""  alt="img1">
+                <img src="assets/img/Itapema/image3.png" onclick="document.querySelector('#imagePrin').src = 'assets/img/Itapema/image3.png', 
+                    document.querySelector('#img001').src = 'assets/img/Itapema/image3.png', document.querySelector('#img002').style.display = 'none'""  alt="img3">
+                <img src="assets/img/Itapema/image4.png" onclick="document.querySelector('#imagePrin').src = 'assets/img/Itapema/image4.png',
+                    document.querySelector('#img001').src = 'assets/img/Itapema/image4.png', document.querySelector('#img002').style.display = 'none'"  alt="img4">
             </div>
             <p class="corAtt">Cor Verde</p>
             <div class="sizes">
@@ -56,7 +61,7 @@
                 <button disabled>31/32</button>
                 <button disabled>33/34</button>
             </div>
-            <button class="buy">Comprar</button>
+            <button onclick="alert('Produto indisponível')" class="buy">Comprar</button>
             <div class="desc">
                 <p class="titleDesc">Descrição</p>
                 <p class="descP">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor molestias natus doloribus dolorum, enim maiores laborum exercitationem, cum eveniet quisquam, numquam nihil saepe vitae officiis sequi nobis. Reiciendis, nemo cupiditate. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione laborum omnis corrupti dolor modi sunt dolorum in earum? Explicabo eius atque facilis asperiores placeat quas mollitia repellat impedit porro aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde a hic qui sunt at, sit incidunt eum corporis explicabo aspernatur, nesciunt dignissimos, facere ad aliquam minima provident pariatur. Porro, perspiciatis.</p>
@@ -75,4 +80,5 @@
         </div>
     </section>
 </body>
+<script src="assets/js/main.js"></script>
 </html>
